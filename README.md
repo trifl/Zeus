@@ -16,7 +16,7 @@ public class func subreddit(subreddit: String, sort: String? = nil, window: Stri
 
 You can now easily connect to this API with Alamofire like this:
 ```Swift
-// MyApplication.swift
+// MyApplicationController.swift
 
 let route = GalleryAPI.subreddit("pics", sort: "hot")
 let request = myAlamoFireManager.request(route, parameters: parameters)
