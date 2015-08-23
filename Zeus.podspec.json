@@ -17,6 +17,10 @@
     "git": "https://github.com/imgur/zeus.git",
     "tag": "0.9.1"
   },
+  "dependencies": {
+    "Alamofire": [
+    ]
+  },
   "source_files": "Zeus/*.swift",
   "requires_arc": true
 }
