@@ -11,6 +11,11 @@
 		408EF7C91B897E6D0017FF3F /* Zeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408EF7BD1B897E6D0017FF3F /* Zeus.framework */; };
 		408EF7D01B897E6D0017FF3F /* ZeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7CF1B897E6D0017FF3F /* ZeusTests.swift */; };
 		408EF7DA1B897F780017FF3F /* Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7D91B897F780017FF3F /* Zeus.swift */; };
+		408EF7DC1B8987720017FF3F /* GalleryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7DB1B8987720017FF3F /* GalleryAPI.swift */; };
+		408EF7DE1B89877E0017FF3F /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7DD1B89877E0017FF3F /* BaseAPI.swift */; };
+		408EF7DF1B8987C10017FF3F /* GalleryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7DB1B8987720017FF3F /* GalleryAPI.swift */; };
+		408EF7E01B8987C40017FF3F /* Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7D91B897F780017FF3F /* Zeus.swift */; };
+		408EF7E11B8987C60017FF3F /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7DD1B89877E0017FF3F /* BaseAPI.swift */; };
 		BDA0C654E0D32A2B2643A90F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93D20CE725712E9C9C60A98 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -32,6 +37,8 @@
 		408EF7CE1B897E6D0017FF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408EF7CF1B897E6D0017FF3F /* ZeusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeusTests.swift; sourceTree = "<group>"; };
 		408EF7D91B897F780017FF3F /* Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zeus.swift; sourceTree = "<group>"; };
+		408EF7DB1B8987720017FF3F /* GalleryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryAPI.swift; sourceTree = "<group>"; };
+		408EF7DD1B89877E0017FF3F /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		4EB46EC0568BB5AC5410D813 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B93D20CE725712E9C9C60A98 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED6AFCDB41D4A2609366C7C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +87,8 @@
 		408EF7BF1B897E6D0017FF3F /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
+				408EF7DD1B89877E0017FF3F /* BaseAPI.swift */,
+				408EF7DB1B8987720017FF3F /* GalleryAPI.swift */,
 				408EF7D91B897F780017FF3F /* Zeus.swift */,
 				408EF7C21B897E6D0017FF3F /* Zeus.h */,
 				408EF7C01B897E6D0017FF3F /* Supporting Files */,
@@ -272,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				408EF7DA1B897F780017FF3F /* Zeus.swift in Sources */,
+				408EF7DE1B89877E0017FF3F /* BaseAPI.swift in Sources */,
+				408EF7DC1B8987720017FF3F /* GalleryAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408EF7E01B8987C40017FF3F /* Zeus.swift in Sources */,
+				408EF7E11B8987C60017FF3F /* BaseAPI.swift in Sources */,
 				408EF7D01B897E6D0017FF3F /* ZeusTests.swift in Sources */,
+				408EF7DF1B8987C10017FF3F /* GalleryAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
