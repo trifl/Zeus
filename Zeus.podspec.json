@@ -18,10 +18,5 @@
     "tag": "0.9.0"
   },
   "source_files": "Zeus/*.swift",
-  "requires_arc": true,
-  "dependencies": { 
-    "Alamofire": [
-      "~> 1.3"
-    ]
-  }
+  "requires_arc": true
 }
