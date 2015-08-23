@@ -10,6 +10,7 @@
 		408EF7C31B897E6D0017FF3F /* Zeus.h in Headers */ = {isa = PBXBuildFile; fileRef = 408EF7C21B897E6D0017FF3F /* Zeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		408EF7C91B897E6D0017FF3F /* Zeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408EF7BD1B897E6D0017FF3F /* Zeus.framework */; };
 		408EF7D01B897E6D0017FF3F /* ZeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7CF1B897E6D0017FF3F /* ZeusTests.swift */; };
+		408EF7DA1B897F780017FF3F /* Zeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408EF7D91B897F780017FF3F /* Zeus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		408EF7C81B897E6D0017FF3F /* ZeusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408EF7CE1B897E6D0017FF3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		408EF7CF1B897E6D0017FF3F /* ZeusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeusTests.swift; sourceTree = "<group>"; };
+		408EF7D91B897F780017FF3F /* Zeus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zeus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		408EF7BF1B897E6D0017FF3F /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
+				408EF7D91B897F780017FF3F /* Zeus.swift */,
 				408EF7C21B897E6D0017FF3F /* Zeus.h */,
 				408EF7C01B897E6D0017FF3F /* Supporting Files */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				408EF7DA1B897F780017FF3F /* Zeus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		408EF7D41B897E6D0017FF3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		408EF7D51B897E6D0017FF3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

@@ -1,0 +1,27 @@
+{
+  "name": "Zeus",
+  "version": "0.9.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "JP McGlone": "jp@imgur.com"
+  },
+  "summary": "A simple way to make API routes with Alamofire",
+  "homepage": "https://github.com/imgur/zeus",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/imgur/zeus.git",
+    "tag": "0.9.0"
+  },
+  "source_files": "Zeus/*.swift",
+  "requires_arc": true,
+  "dependencies": { 
+    "Alamofire": [
+      "~> 1.3"
+    ]
+  }
+}
