@@ -1,7 +1,7 @@
 # Zeus
 
-To install, for now copy Zeus.swift into a project with the Alamofire framework.
-
+To install, for now just copy Zeus.swift into a project with the Alamofire framework.
+This project will be updated to 1.0.0 once I finish up the model layer.
 
 ## Example code
 
@@ -13,30 +13,17 @@ public class func subreddit(subreddit: String, sort: String? = nil, window: Stri
   return (.GET, buildPath(components: ["r", subreddit, sort, window, page]))
 }
 ```
+
 You can now easily connect to this API with Alamofire like this:
 ```Swift
 // MyApplication.swift
 
 let route = GalleryAPI.subreddit("pics", sort: "hot")
 let request = myAlamoFireManager.request(route, parameters: parameters)
-      // Envelope is a class that takes generics, handles the fact that Imgur wraps its responses in an envelope
-      // Envelop<Imgur.Gallery?> tells the response object to automatically get parsed as a Gallery object!
-      // These classes (will be) both included in the project as examples!
-      .responseObject { (envelope: Envelope<Imgur.Gallery>?, error: NSError?) in
-        if error == nil {
-          if let gallery: Imgur.Gallery? = envelope?.data {
-            // Do something with the gallery object
-          }
-        } else {
-          // Handle error
-        }
-        completionHandler?(self, error)
-    }
     // Remember, with Alamofire you can chain response handlers
     .responseJSON { request, response, JSON, error in
       // Do something with the raw JSON
     }
-
 ```
+
 More to come!
-  
